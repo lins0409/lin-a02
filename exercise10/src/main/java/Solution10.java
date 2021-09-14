@@ -35,7 +35,7 @@ public class Solution10 {
         int priceTwo = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter the quantity of item 2: ");
         int quantTwo = Integer.parseInt(scanner.nextLine());
-        
+
         System.out.println("Enter the price of item 3: ");
         int priceThree = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter the quantity of item 3: ");
