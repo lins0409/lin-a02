@@ -34,6 +34,7 @@ public class Solution12 {
     void investment(int prin, double rate, int years){
         double percent = rate / 100;
         float amount = prin * (1 + ((float)percent * years));
+
         System.out.println("After " + years + " years at " + rate + "%, the investment will be worth $" + Math.round(amount) + ".");
     }
 }
