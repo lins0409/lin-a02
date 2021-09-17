@@ -17,12 +17,15 @@ import java.util.Scanner;
 public class Solution11 {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
+        Solution11 sol = new Solution11();
+
         System.out.println("How many euros are you exchanging? ");
         int euros = (int) scanner.nextDouble();
+
         System.out.println("What is the exchange rate? ");
         double rate = scanner.nextDouble();
 
-        Solution11 sol = new Solution11();
+
         sol.math(euros, rate);
     }
 
