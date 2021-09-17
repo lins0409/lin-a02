@@ -21,15 +21,25 @@ import java.util.Scanner;
 public class Solution06{
     //do i have to keep this as a main??? can't i name it a different function so it can run?
     public static void main (String[] args){
-        System.out.println("What is your current age? ");
+
         Scanner scanner = new Scanner(System.in);
+        Solution06 sol = new Solution06();
+
+        System.out.println("What is your current age? ");
         int age = Integer.parseInt(scanner.nextLine());
         System.out.println("At what age would you like to retire? ");
         int retire = Integer.parseInt(scanner.nextLine());
-        int diff = retire - age;
+        int diff = sol.sub(age, retire);
         System.out.println("You have " + diff + " years left until you can retire\n");
         int year = Calendar.getInstance().get(Calendar.YEAR);
-        int sum = year + diff;
+        int sum = sol.math(year, diff);
         System.out.println("It's " + year + ", so you can retire in " + sum);
+    }
+
+    int math(int year, int diff){
+        return year + diff;
+    }
+    int sub(int age, int retire){
+        return retire - age;
     }
 }
