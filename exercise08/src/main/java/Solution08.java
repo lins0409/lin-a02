@@ -35,8 +35,6 @@ public class Solution08 {
         System.out.println("How many slices per pizza? ");
         int slices_per = Integer.parseInt(scanner.nextLine());
 
-
-
         int tot = total.calculateSlices(slices_per, pizzas);
         System.out.println(people + " people with " + pizzas + " pizzas (" + tot + " slices)");
 
