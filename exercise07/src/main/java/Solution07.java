@@ -19,25 +19,35 @@ import java.math.RoundingMode;
  *  -calculate the area in meters squared
  */
 public class Solution07 {
+    //used to format the output in money form
     private static DecimalFormat df2 = new DecimalFormat("#.##");
 
     public static void main (String[] args){
-        System.out.println("What is the length of the room in feet? ");
         Scanner scanner = new Scanner(System.in);
+        Solution07 sol= new Solution07();
+
+        System.out.println("What is the length of the room in feet? ");
         int length = Integer.parseInt(scanner.nextLine());
+
         System.out.println("What is the width of the room in feet? ");
         int width = Integer.parseInt(scanner.nextLine());
+
         System.out.println("The area is \n");
-        Solution07 sol= new Solution07();
+
+
         int area = sol.space(length, width);
+
         System.out.println(area + " square feet\n");
-        double meters = area * 0.09290304;
+        double meters = sol.conversion(area);
+
         System.out.println( df2.format(meters)+ " square meters");
     }
     int space(int len, int wid)
     {
         return len * wid;
     }
+
+    double conversion(int area) { return area * 0.09290304;}
 }
 
 
