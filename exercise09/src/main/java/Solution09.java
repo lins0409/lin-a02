@@ -6,7 +6,7 @@
 import java.util.Scanner;
 
 /*
- * pseudo code
+ * pseudocode
  * Calculate gallons of paint needed to paint the ceiling of a room. Prompt for the length and width, and assume one gallon covers 350 square feet. Display the number of gallons needed to paint the ceiling as a whole number.
  *   -initialize scanner so it can be used
  *   -Ask for length in feet
