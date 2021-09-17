@@ -21,12 +21,15 @@ import java.util.Scanner;
 public class Solution09 {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Solution09 sol = new Solution09();
+
         System.out.println("What is the length in feet? ");
         int length = Integer.parseInt(scanner.nextLine());
+
         System.out.println("What is the width in feet? ");
         int width = Integer.parseInt(scanner.nextLine());
 
-        Solution09 sol = new Solution09();
+
         double space = sol.area(length, width);
         double gallons = Math.ceil(space/350);
 
