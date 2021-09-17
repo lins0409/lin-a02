@@ -23,22 +23,29 @@ import java.util.Scanner;
 
 public class Solution08 {
     public static void main (String[] args) {
-        System.out.println("How many people? ");
         Scanner scanner = new Scanner(System.in);
+        Solution08 total = new Solution08();
+
+        System.out.println("How many people? ");
         int people = Integer.parseInt(scanner.nextLine());
+
         System.out.println("How many pizzas do you have? ");
         int pizzas = Integer.parseInt(scanner.nextLine());
+
         System.out.println("How many slices per pizza? ");
         int slices_per = Integer.parseInt(scanner.nextLine());
 
-        Solution08 total = new Solution08();
+
 
         int tot = total.calculateSlices(slices_per, pizzas);
         System.out.println(people + " people with " + pizzas + " pizzas (" + tot + " slices)");
+
         int div = total.division(tot, people);
         System.out.println("Each person gets " + div + " pieces of pizza.");
+
         int mult = total.multiply(people, div);
         int remainder = tot - mult;
+
         System.out.println("There are " + remainder + " leftover pieces");
     }
 
